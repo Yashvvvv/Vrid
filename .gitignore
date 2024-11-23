@@ -1,6 +1,6 @@
+# Ignore unnecessary files and folders
 *.iml
 .gradle
-/local.properties
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -12,4 +12,23 @@
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+
+# Ignore local configuration files
+/local.properties
+
+# Ignore Android Studio's Gradle wrapper jar if not needed
+!gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
+
+# Keep Gradle wrapper scripts
+!gradlew
+!gradlew.bat
+
+# Ignore generated project files
+*.apk
+*.ap_
+*.hprof
+.idea/
+
+# Uncomment the line below to ignore crashlytics files (if using Fabric)
+# crashlytics-build.properties
